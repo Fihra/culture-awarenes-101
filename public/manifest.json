@@ -1,7 +1,15 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Cultural Awareness",
+  "manifest_version": 2,
+  "version": "1.0",
+  "author": "Fabian Fabro",
+  "name": "Don't be Racist 101",
+  "description": "A website that gives information on a chosen topic based on African-American creators.",
   "icons": [
+    {
+      "192": "logo192.png",
+      "512": "logo512.png"
+    },
     {
       "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
@@ -18,6 +26,11 @@
       "sizes": "512x512"
     }
   ],
+  "sidebar_action": {
+    "default_icon": "logo192.png",
+    "default_title": "Don't be Racist 101",
+    "default_panel": "index.html"
+  },
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
