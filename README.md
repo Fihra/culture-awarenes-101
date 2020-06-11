@@ -1,68 +1,36 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Don't Be Racist 101
 
-## Available Scripts
+A SPA that gives random facts for certain mediums to feature creators of the African-American demographic.
+This is an application built for the BlackLivesMatter Movement, as a starting point to help find resources for a moment. 
 
-In the project directory, you can run:
+Choose a category from one of the following given:
+- Literature
+- Essays
+- Music
+- Art
+- Games
+- Films
 
-### `npm start`
+And a creator with short description appears on the bottom based on the chosen category. It will randomly select a creator from that category based on the resource links provided above. 
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+All material is used for educational purposes.
+Web-scraping used for data from the following websites:
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+**Literature**
+[https://www.mentalfloss.com/article/532058/books-by-african-american-writers-you-need-to-read](https://www.mentalfloss.com/article/532058/books-by-african-american-writers-you-need-to-read)
 
-### `npm test`
+**Essay**
+[https://www.bartleby.com/topics/African-American-Essay](https://www.bartleby.com/topics/African-American-Essay)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Music**
+[https://blog.pandora.com/us/30-times-black-music-changed-the-world/](https://blog.pandora.com/us/30-times-black-music-changed-the-world/)
 
-### `npm run build`
+**Art**
+[https://www.biography.com/news/jean-michael-basquiat-black-artists/](https://www.biography.com/news/jean-michael-basquiat-black-artists/)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Game**
+[https://www.ign.com/articles/2019/02/26/games-developed-by-black-developers-you-should-look-out-for](https://www.ign.com/articles/2019/02/26/games-developed-by-black-developers-you-should-look-out-for)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+**Film**
+[https://www.blackenterprise.com/hollywoods-most-bankable-black-producers/](https://www.blackenterprise.com/hollywoods-most-bankable-black-producers/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
