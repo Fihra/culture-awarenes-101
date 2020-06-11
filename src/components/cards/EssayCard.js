@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import cheerio from 'cheerio';
 import request from 'request';
-import { Card, CardContent, Typography } from '@material-ui/core';
+import { Card, CardContent, Typography, CircularProgress } from '@material-ui/core';
 import { cors, essayURL, randomEssay, randomNumber } from "../Links";
 
 const EssayCard = (props) => {
@@ -50,7 +50,7 @@ const EssayCard = (props) => {
             return null;
         }else {
             const { essay } = data[randomNum];
-            return essay.title;
+            return `Title: ${essay.title}`;
         }
     }
 
@@ -63,19 +63,17 @@ const EssayCard = (props) => {
         }
     }
     return(
-        // <div>
-        //     <h1>Title: {showTitle()}</h1>
-        //     <p>Link: {showLink()} </p>
-        // </div>
-        <Card>
+        <Card className="creator-card">
+            
             <CardContent>
-                <Typography variant="h5">
-                    Title: {showTitle()}
-                </Typography>
-                <Typography>
-                    Link: {showLink()} 
-                </Typography>
+                    <Typography variant="h5">
+                        {data === undefined ? <CircularProgress/> : showTitle()}
+                    </Typography>
+                    <Typography>
+                        {showLink()} 
+                    </Typography>
             </CardContent>
+            
         </Card>
     )
 }

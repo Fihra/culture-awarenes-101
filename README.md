@@ -34,3 +34,13 @@ Web-scraping used for data from the following websites:
 **Film**
 [https://www.blackenterprise.com/hollywoods-most-bankable-black-producers/](https://www.blackenterprise.com/hollywoods-most-bankable-black-producers/)
 
+### Built With
+- React.js
+
+### Libraries Used
+- Material UI - For Styling
+- Cheerio - For Web Scraping
+- Request - Use along with Cheerio for Web Scraping
+
+### Author
+Fabian Fabro 

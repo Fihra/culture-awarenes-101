@@ -46,3 +46,15 @@
 .category-button {
   display: inline-block;
 }
+
+.creator-card {
+  margin-left: 25%;
+  width: 50%;
+  height: 170px;
+  border: solid 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  word-wrap: break-word;
+  /* flex-direction: column; */
+}

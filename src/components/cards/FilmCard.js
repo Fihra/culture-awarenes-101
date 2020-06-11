@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import cheerio from 'cheerio';
 import request from 'request';
-import { Card, CardContent, Typography } from '@material-ui/core';
+import { Card, CardContent, Typography, CircularProgress } from '@material-ui/core';
 import { cors, filmURL, randomFilm, randomNumber } from "../Links";
 
 const FilmCard = (props) => {
@@ -74,7 +74,7 @@ const FilmCard = (props) => {
             return null;
         }else {
             const { director } = data[randomNum];
-            return director.name;
+            return `Director: ${director.name}`;
         }
     }
 
@@ -88,16 +88,12 @@ const FilmCard = (props) => {
     }
     
     return(
-        // <div>
-        //     <h1>Director: {showDirector()}</h1>
-        //     <p>{showFilms()}</p>
-        // </div>
-        <Card>
+        <Card className="creator-card"> 
             <CardContent>
                 <Typography variant="h5">
-                Director: {showDirector()}
+                {data === undefined ? <CircularProgress/> : showDirector()}
                 </Typography>
-                <Typography>
+                <Typography variant="h7">
                     {showFilms()}
                 </Typography>
             </CardContent>

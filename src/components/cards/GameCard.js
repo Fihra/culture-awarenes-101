@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import cheerio from 'cheerio';
 import request from 'request';
 
-import { Card, CardContent, Typography } from '@material-ui/core';
+import { Card, CardContent, Typography, CircularProgress } from '@material-ui/core';
 
 import { cors, gameURL, randomGame, randomNumber } from "../Links";
 
@@ -55,7 +55,7 @@ const GameCard = (props) => {
             return null;
         }else {
             const { game } = data[randomNum];
-            return game.title;
+            return `Game Title: ${game.title}`;
         }
     }
 
@@ -69,18 +69,19 @@ const GameCard = (props) => {
     }
     
     return(
-        <Card>
+        <Card className="creator-card">
             <CardContent>
                 <Typography variant="h5">
-                    Game Title: {showGame()}
+                    {data === undefined ? <CircularProgress/> : showGame()}
                 </Typography>
-                <Typography variant="h5">
+                <Typography variant="h6">
                     {showDeveloper()}
                 </Typography>
                 <Typography>
                 More on Game Developers here: <a href="https://www.blackgamedevs.com/">https://www.blackgamedevs.com/</a>
-                </Typography>
+            </Typography>
             </CardContent>
+            
         </Card>
     )
 }
