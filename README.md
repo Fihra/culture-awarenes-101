@@ -36,6 +36,7 @@ Web-scraping used for data from the following websites:
 
 ### Built With
 - React.js
+- React Hooks
 
 ### Libraries Used
 - Material UI - For Styling
