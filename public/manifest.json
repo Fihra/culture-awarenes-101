@@ -1,9 +1,9 @@
 {
-  "short_name": "Cultural Awareness",
+  "short_name": "Cultural Awareness 101",
   "manifest_version": 2,
   "version": "1.0",
   "author": "Fabian Fabro",
-  "name": "Don't be Racist 101",
+  "name": "Culture Awareness 101",
   "description": "A website that gives information on a chosen topic based on African-American creators.",
   "icons": [
     {
@@ -28,7 +28,7 @@
   ],
   "sidebar_action": {
     "default_icon": "logo192.png",
-    "default_title": "Don't be Racist 101",
+    "default_title": "Culture Awareness 101",
     "default_panel": "index.html"
   },
   "start_url": ".",
