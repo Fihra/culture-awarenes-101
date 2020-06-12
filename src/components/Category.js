@@ -17,7 +17,7 @@ const Category = () => {
     return(
         <div>
             <h2>Choose a Category</h2>
-                <ButtonGroup>
+                <ButtonGroup color="primary" aria-label="category buttons">
                     <ul className="category-list">
                         {showCategories()}
                     </ul>
