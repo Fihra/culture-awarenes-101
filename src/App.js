@@ -11,7 +11,7 @@ function App() {
       <br/>
       <br/>
       <Typography variant="h3">
-        Don't be Racist 101
+        Culture Awareness 101
       </Typography>
       <Typography variant="h4">
         #BlackLivesMatter
