@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import cheerio from 'cheerio';
 import request from 'request';
 
-import { Card, CardContent, Typography, CircularProgress } from '@material-ui/core';
+import { Card, CardContent, Typography, CircularProgress, Button} from '@material-ui/core';
 
 import { cors, gameURL, randomGame, randomNumber } from "../Links";
 
@@ -77,9 +77,9 @@ const GameCard = (props) => {
                 <Typography variant="h6">
                     {showDeveloper()}
                 </Typography>
-                <Typography>
-                More on Game Developers here: <a href="https://www.blackgamedevs.com/">https://www.blackgamedevs.com/</a>
-            </Typography>
+                    <Button color="primary" variant="outlined" target="_blank" href="https://www.blackgamedevs.com/">
+                        Click here for more Black Game Developers
+                    </Button>
             </CardContent>
             
         </Card>

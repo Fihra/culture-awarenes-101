@@ -43,8 +43,9 @@
   align-items: center;
 }
 
-.category-button {
+.category-item {
   display: inline-block;
+  padding: 5px;
 }
 
 .creator-card {

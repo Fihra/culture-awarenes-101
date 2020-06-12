@@ -10,14 +10,14 @@ const Category = () => {
 
     const showCategories = () => {
         return categories.map((category, i) =>{
-            return <li className="category-button" aria-label={`${category} button`} key={i}><Button onClick={() => setCurrentCategory(category)}>{category}</Button></li>      
+            return <li className="category-item" aria-label={`${category} button`} key={i}><Button color="primary" variant="contained" onClick={() => setCurrentCategory(category)}>{category}</Button></li>      
         } )
     }
 
     return(
         <div>
             <h2>Choose a Category</h2>
-                <ButtonGroup variant="outlined" color="primary">
+                <ButtonGroup>
                     <ul className="category-list">
                         {showCategories()}
                     </ul>
