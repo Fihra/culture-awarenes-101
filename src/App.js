@@ -8,8 +8,9 @@ import { Typography } from '@material-ui/core';
 function App() {
   return (
     <div className="App">
+      <Source/>
       <Typography variant="h3">
-        How not to be a RACIST!
+        Don't be Racist 101
       </Typography>
       <Typography variant="h4">
         #BlackLivesMatter
@@ -28,7 +29,7 @@ function App() {
         <p>Educate yourself with other cultures, starting with Black Culture.</p>
         <p>Take an Anthropology, Ethnic Studies, or a culture-based course.</p>
         <p>If you can't, choose a category for a random fact.</p> */}
-        <Source/>
+        
         <Category/>
     </div>  
   );

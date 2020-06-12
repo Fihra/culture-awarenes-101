@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import cheerio from 'cheerio';
 import request from 'request';
-import { Card, CardContent, Typography, CircularProgress } from '@material-ui/core';
+import { Card, CardContent, Typography, CircularProgress, Button } from '@material-ui/core';
 import { cors, literatureURL, randomLiterature, randomNumber } from "../Links";
 
 const AuthorCard = (props) => {
@@ -62,7 +62,7 @@ const AuthorCard = (props) => {
             return null;
         } else {
             const { author } = data[randomNum];
-            return <a href={author.book} aria-label={author.book}>{author.book}</a>
+            return author.book;
         }
     }
 
@@ -72,9 +72,9 @@ const AuthorCard = (props) => {
                 <Typography variant="h5">
                     {data === undefined ? <CircularProgress/> : showAuthor()}
                 </Typography>
-                <Typography>
-                    Link: {showBook()}
-                </Typography>
+                <Button color="primary" variant="outlined" target="_blank" href={showBook()}> 
+                    Read this Book
+                </Button>
             </CardContent>
         </Card>
     )

@@ -57,5 +57,14 @@
   align-items: center;
   justify-content: center;
   word-wrap: break-word;
-  /* flex-direction: column; */
+}
+
+.creator-film-card {
+  margin-left: 10%;
+  width: 80%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  word-wrap: break-word;
 }

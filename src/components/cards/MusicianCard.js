@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import cheerio from 'cheerio';
 import request from 'request';
-import { Card, CardContent, Typography, CircularProgress } from '@material-ui/core';
+import { Card, CardContent, Typography, CircularProgress, Button } from '@material-ui/core';
 import { cors, musicURL, randomMusic, randomNumber } from "../Links";
 
 const MusicianCard = (props) => {
@@ -81,9 +81,9 @@ const MusicianCard = (props) => {
                 <Typography variant="h5">
                     {data === undefined ? <CircularProgress/> : showMusician()}
                 </Typography>
-                <Typography>
-                    <a href={showMusic()}>{showMusic()}</a>
-                </Typography>
+                <Button color="primary" variant="outlined" target="_blank" href={showMusic()}> 
+                    Listen on Pandora
+                </Button>
             </CardContent>
         </Card>
     )
