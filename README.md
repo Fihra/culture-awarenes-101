@@ -1,4 +1,4 @@
-# Don't Be Racist 101
+# Culture Awareness 101
 
 A SPA that gives random facts for certain mediums to feature creators of the African-American demographic.
 This is an application built for the BlackLivesMatter Movement, as a starting point to help find resources for a moment. 
